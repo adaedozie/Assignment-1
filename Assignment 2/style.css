@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;500;900&display=swap');
+
+*{
+  box-sizing: border-box;
+} 
+
+
+:root {
+        --green: #2EC4B6;
+  }
+
+ html, body{
+    margin:0;
+    padding: 0;
+    background-color: #f7fdfc;
+   font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+
+#main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#intro{
+width: 100%;
+max-width: 460px;
+margin: 0 auto;
+padding: 20px;
+box-sizing: border-box;
+}
+
+#intro img{
+    width: 100%;
+    height: auto;
+    max-width: 9vw;
+}
+
+h1{
+  font-weight: 900;
+}
+
+#intro-p{
+font-weight: 100;
+}
+
+h1{
+    font-weight: 900;
+}
+
+input, select, option{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+#form-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+    width: 100%;
+    max-width:580px;
+    height: 679px;
+    margin-right:auto;
+    margin-left: auto;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+}
+
+#form-text{
+    margin-left: 6rem;
+    font-size: 0.8vw;
+}
+
+a{
+    color: var(--green);
+}
+
+form{
+ display: flex;
+ flex-direction: row;
+flex-wrap: wrap;
+margin-top: 2vw;
+
+}
+  
+#fname {
+    width: 45%;
+padding-top: 1vw;;
+    height: 7.2%;
+   padding-left: 2vw;
+
+}
+
+#lname {
+    width: 45%;
+padding-top: 1vw;
+height: 7.2%;
+   padding-left: 2vw;
+}
+
+
+ .input{
+    min-width: 17vw; 
+    height: 4vh;
+    border: 0.5px solid #ccc;
+    font-weight: 100;
+    margin-top: 0.5vw;
+    border-radius: 3px;
+   }
+
+   input{
+    border:none;
+}
+
+input:focus, textarea:focus, select:focus
+{
+border: 1px solid var(--green);
+box-shadow: 0 0 3px var(--green);
+outline-offset: 0px;
+outline: none;
+}  
+
+
+#gender{
+    width: 45%;
+    padding-left: 2vw;
+    padding-top: 2.1vw;
+}
+
+#dob{
+    width: 45%;
+    margin-top: 2.1vw;
+    padding-left: 2vw;
+}
+
+#weight{
+    width: 40%;
+    padding-top: 1vw;;
+        height: 7.2%;
+       padding-left: 2vw;
+
+}
+
+
+#height{
+    width: 40%;
+    padding-top: 1vw;
+        height: 7.2%;
+       padding-left: 4vw;
+       
+}
+
+
+#activity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 97%;
+    padding-left: 2vw;
+}
+
+select{
+    border-radius: 3px;;
+}
+
+.password{
+    border-radius: 3px;
+}
+.activityinput{
+    width: 95%;
+    height: 4vh;
+    border: 1px solid #ccc;
+}
+
+
+#password{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 98%;
+    padding-left: 2vw;
+}
+
+.password{
+    width: 95%;
+    height: 4vh;
+    border: 1px solid #ccc;
+}
+
+#register{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+.btn{
+    background: var(--green);
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 85%;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+
+
+/*media query for extrta large devices*/
+@media only screen and (min-width: 1540px) {
+
+  #form-box{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+      width: 100%;
+      max-width:1000px;
+      height: 800px;
+      margin-right:auto;
+      margin-left: auto;
+      box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+  }
+
+  #fname{
+      width: 40%;
+      margin-left: 0vw;
+      margin-right: 3vw;
+      padding-right:2vw;
+        }
+  #lname{
+          width: 30%;
+        
+  }
+
+  #lname input{
+      padding-left: 10vw;
+  }
+
+ #gender{
+  width:40%;
+  padding-top: 1;
+ }
+
+ #dob{
+  width: 40%;
+  margin-left: 3vw;
+ }
+
+ #weight{
+   width: 40%;
+   margin-bottom: 2vw;
+ }
+ 
+ #height{
+  margin-bottom: 2vw;
+  width: 40%;
+  margin-left: 1vw;
+ }
+
+  #activity{
+      padding-top: 0%;
+   width: 98%;
+   padding-top: 0%;
+  }
+
+#password{
+  width: 98%;
+}
+
+
+#form-text{
+  margin-left: 14rem;
+  font-size: 0.8vw;
+}
+
+.input{
+  min-width: 23vw; 
+   height: 4vh;
+  border: 0.5px solid #ccc;
+  font-weight: 100;
+  margin-top: 0.5vw;
+ }
+
+ input{
+  border:none;
+}
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+    #form-box{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+        width: 100%;
+        max-width:1000px;
+        height: 800px;
+        margin-right:auto;
+        margin-left: auto;
+        box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+    }
+
+    #fname{
+        width: 40%;
+        margin-left: 0vw;
+        margin-right: 3vw;;
+    }
+    #lname{
+            width: 40%;
+          
+    }
+
+    #lname input{
+        padding-left: 10vw;
+    }
+
+   #gender{
+    width:40%;
+    padding-top: 1;
+   }
+
+   #dob{
+    width: 40%;
+    margin-left: 3vw;
+   }
+
+   #weight{
+     width: 40%;
+     margin-bottom: 2vw;
+   }
+   
+   #height{
+    margin-bottom: 2vw;
+    width: 40%;
+    margin-left: 1vw;
+   }
+
+    #activity{
+        padding-top: 0%;
+     width: 98%;
+     padding-top: 0%;
+    }
+
+  #password{
+    width: 98%;
+  }
+
+
+  #form-text{
+    margin-left: 14rem;
+    font-size: 0.8vw;
+}
+
+.input{
+    min-width: 24vw; 
+     height: 4vh;
+    border: 0.5px solid #ccc;
+    font-weight: 100;
+    margin-top: 0.5vw;
+   }
+
+   input{
+    border:none;
+}
+
+
+}
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    #main {
+      flex-direction: column; 
+    }
+  
+    #form-box {
+      margin-top: 20px;
+      width: 90%;
+       /* height:; */
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+      height: 70vh;
+    }
+
+
+
+#intro img{
+    width: 100%;
+    height: auto;
+    max-width: 12vw;
+}
+
+    .input{
+        width: 100%;
+    }
+
+    #fname{
+        margin-top: 1vw;
+        width: 97%;
+    }
+    #lname{
+        width: 97%;
+    }
+
+   #gender{
+    width:97%;
+   }
+
+   #dob{
+    width: 97%;
+    margin-left: 0vw;
+   }
+
+   #weight{
+     width: 97%;
+     margin-bottom: 2vw;
+   }
+   
+   #height{
+    margin-bottom: 2vw;
+    width: 97.5%;
+    padding-left: 2%;
+    margin-left: 0vw;
+   }
+
+    #activity{
+        padding-top: 0%;
+     width: 100%;
+     padding-top: 0%;
+    }
+
+  #password{
+    width: 100%;
+  }
+
+  /* #form-text{
+    margin-top: 35vw;
+  } */
+
+ .input{
+    min-width: 17vw; 
+    height: 4vh;
+    border: 1px solid #ccc;
+    font-weight: 100;
+    margin-top: 0.8vw;
+   }
+
+   #form-text{
+    margin-left: 22vw;
+    font-size: 2vw;
+    margin-top: 100px;
+    width: 40vw;
+}
+  }
+
+
+
+  /* Media Query for tablets */
+@media (max-width: 768px) {
+
+    #main {
+        flex-direction: column; 
+      }
+    
+      #form-box {
+        margin-top: 20px;
+        width: 90%;
+         /* height:; */
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        height: 65vh;
+      }
+
+
+      .input{
+        width: 100%;
+    }
+
+    #fname{
+        margin-top: 1.5vw;
+        width: 97%;
+    }
+    #lname{
+        width: 97%;
+        margin-top: 1.5vw;
+    }
+
+   #gender{
+    width:97%;
+   }
+
+   #dob{
+    width: 97%;
+    margin-left: 0vw;
+   }
+
+   #weight{
+     width: 97%;
+     margin-bottom: 2vw;
+     margin-top: 1.5vw;
+   }
+   
+   #height{
+    margin-bottom: 2vw;
+    width: 97.5%;
+    padding-left: 2%;
+    margin-left: 0vw;
+   }
+
+    #activity{
+        padding-top: 0%;
+     width: 100%;
+     padding-top: 0%;
+    }
+
+  #password{
+    width: 100%;
+  }
+
+  /* #form-text{
+    margin-top: 35vw;
+  } */
+
+ .input{
+    min-width: 17vw; 
+    height: 4vh;
+    border: 1px solid #ccc;
+    font-weight: 100;
+    margin-top: 0.8vw;
+   }
+
+   #form-text{
+    text-align: center;
+    margin-left: 22vw;
+    font-size: 2vw;
+    margin-top: 70px;
+    width: 40vw;
+}
+
+}
+
+/*for smaller screens*/
+
+@media (max-width: 425px) {
+  
+    #form-box {
+        margin-top: 20px;
+        width: 90%;
+    
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        height: 60vh;
+      }
+
+      #form-text{
+        text-align: center;
+        margin-left: 9vw;
+        font-size: 3.5vw;
+        margin-top: 70px;
+        width: 71vw;
+    }
+
+
+
+}

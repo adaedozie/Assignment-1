@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <title>Form</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title> Form </title>
+</head>
+<body>
+
+  <!-- main content-->
+<div id="main">
+<!-- intro and logo -->
+    <div id="intro">
+        <img src="image/Logo.png" alt="logo">
+        <article>
+        <h1>For Individuals</h1>
+        <!--text-->
+         <p id="intro-p">
+            Start benefiting from the wellnness experience. For
+            companies looking on increasing productivity, and improving
+            organization wellness.
+         </p>
+        </article> 
+   </div>
+   
+
+<!--form section-->
+    <div id="form-box"> 
+        <form action="/submit_application" method="post">
+
+  
+        <div id="fname">
+          <label id="label" for="fname">First Name</label><br>
+          <input type="text" class="input" name="fname" required>
+         </div>
+         <div id="lname">
+          <label id="label"  for="lname">Last Name</label><br>
+          <input type="text"  class="input"  name="lname" >
+         </div>
+<!--gender-->
+         <div id="gender">
+          <label id="label"  for="gender">Gender</label><br>
+          <select  name="gender" class="input" required>
+            <option id="option" value="" disabled selected>Select your gender</option>
+            <option  id="option" value="male">Male</option>
+            <option id="option" value="female">Female</option>
+            <option id="option" value="other">Other</option>
+          </select>
+         </div>
+  
+
+<!--date of birth-->
+<div id="dob">
+  <section>
+     <label id="label"  for="dob">Date of Birth</label><br>
+     <input type="date"  class="input" name="dob" required>
+       </section>
+     </div>
+
+          <!-- Weight Input -->
+      <div id="weight" >
+        <section>
+        <label id="label" for="weight">Weight(KG)</label><br>
+       <input type="number" id="weight-box "  class="input" name="weight" placeholder="Enter Weight" required>
+       </section>
+      </div>
+<!---height-->
+        <div id="height">
+          <section>
+        <label id="label" for="height">Height(CM)</label><br>
+      <input type="number" id="height-box"  class="input"   name="height" placeholder="Enter Height here..." required>
+      <br>
+      </section>
+        </div>
+     <!--activity-->
+      <div id="activity">
+        <label for="Activity Level"> Activity level</label><br>
+        <select id="Activity" class="activityinput" name="activity" required>
+          <option value="" disabled selected>Select Level</option>
+            <option value="regular">regular</option>
+            <option value="not so regular">not to regular</option>
+            <option value="once once sha">once once sha</option>
+         </select>
+        </div>
+   <!--password-->
+       <div id="password">
+        <label for="password">Password</label><br>
+        <input type="password" class="password" name="password" required><br>
+       </div>
+
+      <!--register-->
+       <div id="register">
+        <button class="btn" type="submit">Register</button>
+       </div>
+       <p id="form-text">By clicking Register, you agree to our <a href="url">Terms of Use</a> and our <a href="url">Privacy Policy</a></p>
+    </form>
+
+    </div>
+
+
+</div>
+</body>
+</html>
